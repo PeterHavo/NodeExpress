@@ -12,3 +12,8 @@ simple install globaly via npm:
 sudo npm install -g nodemon
 sudo npm install -g node-inspector
 
+Start
+$ node-debug app.js
+
+
+

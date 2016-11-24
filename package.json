@@ -1,0 +1,22 @@
+{
+  "name": "studyexpress",
+  "version": "1.0.0",
+  "description": "studing how to create web app using node js express Treehouse basic course ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PeterHavo/NodeExpress.git"
+  },
+  "author": "Peter Haviar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PeterHavo/NodeExpress/issues"
+  },
+  "homepage": "https://github.com/PeterHavo/NodeExpress#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}

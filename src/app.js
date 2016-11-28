@@ -1,16 +1,20 @@
 'use strict';
 var express = require('express');
+var posts = require('./mock/posts.json')
 var app = express();
-
+//debugger;
+console.log(posts);
 app.get('/', function(req, res) {
 	res.send('<h4> This is a Havo Bootstrap test</h4>')
 })
 
-app.get('/blog', function(req, res){
-	res.send(`<h4><stong>This is a MEGA BLOG</stong></h4>`)
+app.get('/blog/:id', function(req, res){
+	var title = req.params.id;
+	var post = posts[title];
+	res.send(post);
 })
 app.listen(3000, function(){
-	console.log('App is up and running on port 3000');
+	console.log('App is up and running on port 3000 Huraaa Peter :D ');
 });
 
 

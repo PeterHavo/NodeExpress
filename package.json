@@ -18,6 +18,7 @@
   "homepage": "https://github.com/PeterHavo/NodeExpress#readme",
   "dependencies": {
     "bootstrap": "^3.3.7",
-    "express": "^4.14.0"
+    "express": "^4.14.0",
+    "jade": "^1.11.0"
   }
 }

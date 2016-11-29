@@ -3,9 +3,14 @@ var express = require('express');
 var posts = require('./mock/posts.json')
 var app = express();
 //debugger;
-console.log(posts);
+
+
+
+app.set('view engine', 'jade');
+app.set('views',__dirname + '/templates');
+
 app.get('/', function(req, res) {
-	res.send('<h4> This is a Havo Bootstrap test</h4>')
+	res.render('index');
 })
 
 app.get('/blog/:id?', function(req, res){

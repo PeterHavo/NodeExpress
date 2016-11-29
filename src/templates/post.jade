@@ -1,0 +1,29 @@
+html(lang='en')
+  head
+    title #{fero.title}
+    script(type='text/javascript').
+      foo = true;
+      bar = function () {};
+      if (foo) {
+      bar(1 + 5)
+      }
+  body
+    section.post
+     .container.text-right
+        a(href="").text-faded View all
+        row
+         .col-lg-8.col-lg-offset-2.text-center
+          h2.section-heading I like to run!
+          hr.light
+          p.text-faded
+           | #{fero.description}
+          .article
+           |  #{fero.description}
+    h1 Jade - node template engine
+    #container.col
+      p You are amazing
+      p
+        | Jade is a terse and simple
+        | templating language with a
+        | strong focus on performance
+        | and powerful features.

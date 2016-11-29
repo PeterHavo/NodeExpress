@@ -20,8 +20,8 @@ app.get('/blog/:id?', function(req, res){
       res.send('<h3>This page is under heavy construction right now!</h3>  ')
   
     } else {
-	var post = posts[title];
-	res.send(post);
+	var post = posts[title] || {};
+	res.render('post', {fero: post});
     }
 })
 app.listen(3000, function(){
